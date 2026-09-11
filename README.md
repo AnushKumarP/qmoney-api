@@ -2,7 +2,7 @@
 
 A production-style Spring Boot REST API that calculates total and annualized returns for a portfolio of equities and ranks the results from highest to lowest annualized return.
 
-This repository is a deployable, recruiter-friendly API presentation of the return-calculation logic from the original [QMoney project](https://github.com/AnushKumarP/Projects/tree/master/qmoney). It includes input validation, centralized error handling, automated testing, containerization, a health check, and an interactive browser demonstration.
+This repository is a deployable, recruiter-friendly API presentation of the return-calculation logic. It includes input validation, centralized error handling, automated testing, containerization, a health check, and an interactive browser demonstration.
 
 ## Key capabilities
 
