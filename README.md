@@ -165,20 +165,6 @@ docker run --rm -p 8080:8080 qmoney-api
 
 The multi-stage Docker build compiles the application with Maven and produces a smaller Java 17 runtime image. The container runs as a non-root user.
 
-## Deploy on Render
-
-The repository includes a root-level `render.yaml` Blueprint and a `Dockerfile`.
-
-1. Sign in to [Render](https://dashboard.render.com/).
-2. Create a new Blueprint.
-3. Connect this GitHub repository.
-4. Confirm the free or paid service plan.
-5. Apply the Blueprint and wait for the health check to pass.
-
-Render monitors `/actuator/health` and automatically deploys new commits from the connected branch.
-
-> The Render free tier can sleep after inactivity. Use a paid instance when immediate, continuous availability is required.
-
 ## Project structure
 
 ```text
