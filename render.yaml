@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: qmoney-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /actuator/health
+    autoDeployTrigger: commit
