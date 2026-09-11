@@ -32,14 +32,15 @@ This repository is a deployable, recruiter-friendly API presentation of the retu
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[Browser or API client] --> B[Portfolio controller]
-    B --> C[Validation]
-    C --> D[Return calculation]
-    D --> E[Ranked JSON response]
-    B --> F[Exception handler]
-```
+| Stage | Component | Responsibility |
+| --- | --- | --- |
+| 1 | Browser or API client | Sends sample or custom portfolio requests |
+| 2 | Portfolio controller | Exposes REST endpoints and accepts JSON input |
+| 3 | Jakarta validation | Rejects missing, blank, or non-positive values |
+| 4 | Return calculation | Computes total and annualized returns |
+| 5 | Ranking | Sorts holdings by annualized return |
+| 6 | JSON response | Returns the requested end date and ranked results |
+| Error path | Exception handler | Converts invalid requests into HTTP 400 responses |
 
 The application is intentionally stateless. Each request supplies the required trade information, the service performs the calculations in memory, and the API returns the ranked result without storing personal or financial data.
 
