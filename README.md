@@ -4,6 +4,10 @@ A production-style Spring Boot REST API that calculates total and annualized ret
 
 This repository is a deployable, recruiter-friendly API presentation of the return-calculation logic. It includes input validation, centralized error handling, automated testing, containerization, a health check, and an interactive browser demonstration.
 
+[Open Live Demo](https://qmoney-api.onrender.com) · [Portfolio](https://logicharbor.dev) · [View Source](https://github.com/AnushKumarP/qmoney-api)
+
+> Render's free service may need a short warm-up after a period of inactivity.
+
 ## Key capabilities
 
 - Calculate total return from purchase and selling prices
